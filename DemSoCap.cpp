@@ -10,6 +10,7 @@ int main() {
     int n;
     long long int x;
     cin >> n >> x;
+
     int arr[n];
     for(int i=0; i<n; i++) {
         cin >> arr[i];
@@ -17,7 +18,7 @@ int main() {
 
     int count = 0;
     for(int i=0; i<n; i++) {
-        //Vs so sanh vs chinh no nen ra 45 + 10(ss chinh no) = 55 cap
+        //Output trong ví dụ ra 55 do nó phải cộng thêm với chính nó
         for(int j=i; j<n; j++) {
             if(pow(arr[i], 2) + arr[j] == x) {
                 count++;
